@@ -3,8 +3,8 @@ class Asynction < Formula
 
   desc "SocketIO python framework driven by the AsyncAPI specification"
   homepage "https://github.com/dedoussis/asynction"
-  url "https://github.com/dedoussis/asynction/archive/refs/tags/0.0.18.tar.gz"
-  sha256 "4b81d0dda8ce98b072f15560366e039c3715620daeac945654efa1c458400413"
+  url "https://github.com/dedoussis/asynction/archive/refs/tags/0.1.0.tar.gz"
+  sha256 "ae4c214e5a4d0ab5a6ce7762aaec24844b1ff9240395ff8e1f806ed727f3b896"
   license "MIT"
 
   depends_on "python@3.9"
