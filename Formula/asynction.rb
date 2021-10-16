@@ -3,8 +3,8 @@ class Asynction < Formula
 
   desc "SocketIO python framework driven by the AsyncAPI specification"
   homepage "https://github.com/dedoussis/asynction"
-  url "https://github.com/dedoussis/asynction/archive/refs/tags/0.1.0.tar.gz"
-  sha256 "ae4c214e5a4d0ab5a6ce7762aaec24844b1ff9240395ff8e1f806ed727f3b896"
+  url "https://github.com/dedoussis/asynction/archive/refs/tags/0.4.2.tar.gz"
+  sha256 "677f29f3616ab03b67263da686bd7badb96199059bdb4397317681201ac7bbd1"
   license "MIT"
 
   depends_on "python@3.9"
@@ -20,28 +20,18 @@ class Asynction < Formula
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/21/83/308a74ca1104fe1e3197d31693a7a2db67c2d4e668f20f43a2fca491f9f7/click-8.0.1.tar.gz"
-    sha256 "8c04c11192119b1ef78ea049e0a6f0463e4c48ef00a30160c704337586f3ad7a"
-  end
-
-  resource "dnspython" do
-    url "https://files.pythonhosted.org/packages/13/27/5277de856f605f3429d752a39af3588e29d10181a3aa2e2ee471d817485a/dnspython-2.1.0.zip"
-    sha256 "e4a87f0b573201a0f3727fa18a516b055fd1107e0e5477cded4a2de497df1dd4"
-  end
-
-  resource "eventlet" do
-    url "https://files.pythonhosted.org/packages/0c/4a/7f94ff0eed09c2bb1bae81edfca51e402b92e5939f60f7c01f96be7c4616/eventlet-0.32.0.tar.gz"
-    sha256 "2f0bb8ed0dc0ab21d683975d5d8ab3c054d588ce61def9faf7a465ee363e839b"
+    url "https://files.pythonhosted.org/packages/f4/09/ad003f1e3428017d1c3da4ccc9547591703ffea548626f47ec74509c5824/click-8.0.3.tar.gz"
+    sha256 "410e932b050f5eed773c4cda94de75971c89cdb3155a72a0831139a79e5ecb5b"
   end
 
   resource "Faker" do
-    url "https://files.pythonhosted.org/packages/35/23/8f8361df9a1637d85235f3d62d5ab3462c1678cd6d0ccc8869595b728176/Faker-8.13.2.tar.gz"
-    sha256 "d4492b0f84d67e76a86ce1712ec7d38ecb92f91c0ca0ac0a9f2a0c3227ab9eb2"
+    url "https://files.pythonhosted.org/packages/8f/fe/43a071b6aeb6d41e00856c286de24e91312dde292f87259a547b52d60449/Faker-9.3.1.tar.gz"
+    sha256 "cdd9e9af2fba5c96ee2ec4ac8419bba458e26b58a2b98c1f6467ee66096bee52"
   end
 
   resource "Flask" do
-    url "https://files.pythonhosted.org/packages/c0/df/c516b5f38a670b6b0de604c2637ed5860db03692c2f8542fd1f60c2552a7/Flask-2.0.1.tar.gz"
-    sha256 "1c4c257b1892aec1398784c63791cbaa43062f1f7aeb555c4da961b20ee68f55"
+    url "https://files.pythonhosted.org/packages/95/40/b976286b5e7ba01794a7e7588e7e7fa27fb16c6168fa849234840bf0f61d/Flask-2.0.2.tar.gz"
+    sha256 "7b2fb8e934ddd50731893bdcdb00fc8c0315916f9fcd50d22c7cc1a95ab634e2"
   end
 
   resource "Flask-SocketIO" do
@@ -49,19 +39,19 @@ class Asynction < Formula
     sha256 "1efdaacc7a26e94f2b197a80079b1058f6aa644a6094c0a322349e2b9c41f6b1"
   end
 
-  resource "greenlet" do
-    url "https://files.pythonhosted.org/packages/72/7e/d8586068d47adba73afc085249712bd266cd7ffbf27d8bc260c33e9d6133/greenlet-1.1.1.tar.gz"
-    sha256 "c0f22774cd8294078bdf7392ac73cf00bfa1e5e0ed644bd064fdabc5f2a2f481"
+  resource "h11" do
+    url "https://files.pythonhosted.org/packages/bd/e9/72c3dc8f7dd7874812be6a6ec788ba1300bfe31570963a7e788c86280cb9/h11-0.12.0.tar.gz"
+    sha256 "47222cb6067e4a307d535814917cd98fd0a57b6788ce715755fa2b6c28b56042"
   end
 
   resource "hypothesis" do
-    url "https://files.pythonhosted.org/packages/bc/bb/4189ed9e355b13f1a268807a57a570b5d8723537c959d1a86c8b320cf7bf/hypothesis-6.21.6.tar.gz"
-    sha256 "29b72005910f2a548d727e5d5accf862a6ae84e49176d748fb6ca040ef657592"
+    url "https://files.pythonhosted.org/packages/93/bb/a3cdbb12c78161bd185ed40c19b2e9475b8b25138aed45b115d5754d05fb/hypothesis-6.23.2.tar.gz"
+    sha256 "b71b257916c91484716a10220ed2b9a0cf82acc3ed8ef421bb2aa0a671761053"
   end
 
   resource "hypothesis-jsonschema" do
-    url "https://files.pythonhosted.org/packages/6a/d4/58f01ada01a474ad3090554df55d52df8ca075f8faf0820b9937dbf09049/hypothesis-jsonschema-0.20.1.tar.gz"
-    sha256 "a1db2461c8fbc59cb35aaa514a4cfba98ae13cc9ab4fa0da0eddbef74b774984"
+    url "https://files.pythonhosted.org/packages/da/58/b93e51e379d12eaae03074a811c1b0134aa2ca77e98f26cf6f2978c24955/hypothesis-jsonschema-0.21.0.tar.gz"
+    sha256 "0af2cdbd4f03253924e805095cd477fbd96a59bd1821fd2c744b74108a43fb48"
   end
 
   resource "importlib-metadata" do
@@ -75,13 +65,13 @@ class Asynction < Formula
   end
 
   resource "Jinja2" do
-    url "https://files.pythonhosted.org/packages/39/11/8076571afd97303dfeb6e466f27187ca4970918d4b36d5326725514d3ed3/Jinja2-3.0.1.tar.gz"
-    sha256 "703f484b47a6af502e743c9122595cc812b0271f661722403114f71a79d0f5a4"
+    url "https://files.pythonhosted.org/packages/f8/86/7c0eb6e8b05385d1ce682abc0f994abd1668e148fb52603fa86e15d4c110/Jinja2-3.0.2.tar.gz"
+    sha256 "827a0e32839ab1600d4eb1c4c33ec5a8edfbc5cb42dafa13b81f182f97784b45"
   end
 
   resource "jsonschema" do
-    url "https://files.pythonhosted.org/packages/69/11/a69e2a3c01b324a77d3a7c0570faa372e8448b666300c4117a516f8b1212/jsonschema-3.2.0.tar.gz"
-    sha256 "c8a85b28d377cc7737e46e2d9f2b4f44ee3c0e1deac6bf46ddefc7187d30797a"
+    url "https://files.pythonhosted.org/packages/f2/f7/1cb7e8e3a6eb85ffc0d8c14a1022214a1699f110bf51e3d3d178280df04d/jsonschema-4.1.0.tar.gz"
+    sha256 "9dd7c33b4a96138dc37bb86b3610d3b12d30d96433d4d73435ca3025804154a8"
   end
 
   resource "MarkupSafe" do
@@ -105,13 +95,18 @@ class Asynction < Formula
   end
 
   resource "python-socketio" do
-    url "https://files.pythonhosted.org/packages/72/70/9b992f4b8adfcbf0724c079c18629d83f20b36fb0eb64d4fdf874054becf/python-socketio-5.4.0.tar.gz"
-    sha256 "ca807c9e1f168e96dea412d64dd834fb47c470d27fd83da0504aa4b248ba2544"
+    url "https://files.pythonhosted.org/packages/50/2f/3a92212b779eecd8bd9ee9b7d51ea1f94443078bf040fef758cd202984f6/python-socketio-5.4.1.tar.gz"
+    sha256 "ef4e273ddfebb421144a228cbab1e7e27ffe8d372514fa561e57d590ea6627b0"
   end
 
   resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz"
-    sha256 "607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"
+    url "https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz"
+    sha256 "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
+  end
+
+  resource "simple-websocket" do
+    url "https://files.pythonhosted.org/packages/c3/ba/93446f152e13982d3098b2bae271806217aeddd1f326b1ed03e9c301ef9b/simple-websocket-0.4.0.tar.gz"
+    sha256 "b2e00d4e2d3dcb91435171508242d45599fa223a9c13daa0721f06c743f890e7"
   end
 
   resource "six" do
@@ -135,13 +130,18 @@ class Asynction < Formula
   end
 
   resource "Werkzeug" do
-    url "https://files.pythonhosted.org/packages/e3/bd/a49e5f756b2f29010b5be321fe02478660dbf8fefea3f078493c86011b5f/Werkzeug-2.0.1.tar.gz"
-    sha256 "1de1db30d010ff1af14a009224ec49ab2329ad2cde454c8a708130642d579c42"
+    url "https://files.pythonhosted.org/packages/83/3c/ecdb36f49ab06defb0d5a466cfeb4ae90a55d02cfef379f781da2801a45d/Werkzeug-2.0.2.tar.gz"
+    sha256 "aa2bb6fc8dee8d6c504c0ac1e7f5f7dc5810a9903e793b6f715a9f015bdadb9a"
+  end
+
+  resource "wsproto" do
+    url "https://files.pythonhosted.org/packages/2b/a4/aded0882f8f1cddd68dcd531309a15bf976f301e6a3554055cc06213c227/wsproto-1.0.0.tar.gz"
+    sha256 "868776f8456997ad0d9720f7322b746bbe9193751b5b290b7f924659377c8c38"
   end
 
   resource "zipp" do
-    url "https://files.pythonhosted.org/packages/3a/9f/1d4b62cbe8d222539a84089eeab603d8e45ee1f897803a0ae0860400d6e7/zipp-3.5.0.tar.gz"
-    sha256 "f5812b1e007e48cff63449a5e9f4e7ebea716b4111f9c4f9a645f91d579bf0c4"
+    url "https://files.pythonhosted.org/packages/02/bf/0d03dbdedb83afec081fefe86cae3a2447250ef1a81ac601a9a56e785401/zipp-3.6.0.tar.gz"
+    sha256 "71c644c5369f4a6e07636f0aa966270449561fcea2e3d6747b8d23efaa9d7832"
   end
 
   def install
