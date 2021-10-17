@@ -8,8 +8,10 @@ class Asynction < Formula
   license "MIT"
 
   bottle do
+    root_url "https://github.com/dedoussis/homebrew-tap/releases/download/asynction-0.4.2"
     rebuild 1
-    sha256 cellar: :any_skip_relocation, big_sur: "e1cb5ce780cb3dd1bc471d4ff91344551d908dc516597f34851f6c006d6979ba"
+    sha256 cellar: :any_skip_relocation, catalina:     "49bf81a529f4018ad0fc393009fe7abe014ac9e017dfc2c39990a82881ac34c6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d0627923c9c56f727f1fd403f214da67062ab837f0cac1dd1cf3ddb70aa1f5f3"
   end
 
   depends_on "python@3.9"
