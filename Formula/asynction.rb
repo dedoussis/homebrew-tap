@@ -7,12 +7,12 @@ class Asynction < Formula
   sha256 "677f29f3616ab03b67263da686bd7badb96199059bdb4397317681201ac7bbd1"
   license "MIT"
 
-  depends_on "python@3.9"
-
   bottle do
     rebuild 1
     sha256 cellar: :any_skip_relocation, big_sur: "e1cb5ce780cb3dd1bc471d4ff91344551d908dc516597f34851f6c006d6979ba"
   end
+
+  depends_on "python@3.9"
 
   resource "attrs" do
     url "https://files.pythonhosted.org/packages/ed/d6/3ebca4ca65157c12bd08a63e20ac0bdc21ac7f3694040711f9fd073c0ffb/attrs-21.2.0.tar.gz"
