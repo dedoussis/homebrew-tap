@@ -9,6 +9,11 @@ class Asynction < Formula
 
   depends_on "python@3.9"
 
+  bottle do
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, big_sur: "e1cb5ce780cb3dd1bc471d4ff91344551d908dc516597f34851f6c006d6979ba"
+  end
+
   resource "attrs" do
     url "https://files.pythonhosted.org/packages/ed/d6/3ebca4ca65157c12bd08a63e20ac0bdc21ac7f3694040711f9fd073c0ffb/attrs-21.2.0.tar.gz"
     sha256 "ef6aaac3ca6cd92904cdd0d83f629a15f18053ec84e6432106f7a4d04ae4f5fb"
